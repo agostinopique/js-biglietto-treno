@@ -10,9 +10,9 @@ Realizzabile con una lista che mostra tutti i dati raccolti;
 */
 
 // 1. Input dell'user
-// let distanceKm = prompt('Quanti chilometri devi percorrere?');
+let distanceKm = prompt('Quanti chilometri devi percorrere?');
 
-// let passengerAge = prompt('Qual\'é l\'età del passeggero?'); 
+let passengerAge = prompt('Qual\'é l\'età del passeggero?'); 
 
 const pricePerKm = 0.21;
 
@@ -26,7 +26,7 @@ let roundTicketPrice = ticketPrice.toFixed(2);
 
 console.log(ticketPrice);
 
-console.log(roundTicketPrice);
+console.log('prezzo arrotondato', roundTicketPrice);
 
 
 //  3. Calcolo dello sconto se si verificano i requisiti di etá 
@@ -51,3 +51,9 @@ let roundPrezzoFinale = prezzoFinale.toFixed(2);
 console.log('prezzo finale', prezzoFinale);
 
 console.log('rounded final price', roundPrezzoFinale);
+
+// 4.Stampa a schermo informazioni calcolate
+
+document.getElementById('prezzo_base').innerHTML += roundTicketPrice;
+document.getElementById('sconto').innerHTML += roundDiscountPrice;
+document.getElementById('prezzo_finale').innerHTML += roundPrezzoFinale;

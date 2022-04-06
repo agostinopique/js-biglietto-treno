@@ -22,5 +22,9 @@ p#discount {
 }
 .price_container {
     border-radius: 6px;
-    background-color: red;
+    background-color: white;
+}
+
+.price_container p {
+    color: #A6170A;
 }
