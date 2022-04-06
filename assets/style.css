@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #A6170A;
+}
+
+.price_display{
+    margin: 0 auto;
+}
+
+.instructions {
+    background-color: white;
+}
+
+p#discount {
+    margin: 0;
+}
+.price_container {
+    border-radius: 6px;
+    background-color: red;
+}
