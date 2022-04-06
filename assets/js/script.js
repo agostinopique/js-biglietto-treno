@@ -16,17 +16,17 @@ let passengerAge = prompt('Qual\'é l\'età del passeggero?');
 
 const pricePerKm = 0.21;
 
-console.log('distanza da percorrere', distanceKm);
-console.log('età del passeggero', passengerAge);
+// console.log('distanza da percorrere', distanceKm);
+// console.log('età del passeggero', passengerAge);
 
 // 2. Calcolo del prezzo del biglietto
 let ticketPrice = distanceKm * pricePerKm;
 
 let roundTicketPrice = ticketPrice.toFixed(2);
 
-console.log(ticketPrice);
+// console.log(ticketPrice);
 
-console.log('prezzo arrotondato', roundTicketPrice);
+// console.log('prezzo arrotondato', roundTicketPrice);
 
 
 //  3. Calcolo dello sconto se si verificano i requisiti di etá 
@@ -38,19 +38,21 @@ if(passengerAge < 18) {
     ticketPrice
 }
 
+let discountPrice = 0;
+
 let roundDiscountPrice = discountPrice.toFixed(2);
 
-console.log('discount price', discountPrice);
+// console.log('discount price', discountPrice);
 
-console.log('rounded discount price', roundDiscountPrice);
+// console.log('rounded discount price', roundDiscountPrice);
 
 let prezzoFinale = ticketPrice - discountPrice;
 
 let roundPrezzoFinale = prezzoFinale.toFixed(2);
 
-console.log('prezzo finale', prezzoFinale);
+// console.log('prezzo finale', prezzoFinale);
 
-console.log('rounded final price', roundPrezzoFinale);
+// console.log('rounded final price', roundPrezzoFinale);
 
 // 4.Stampa a schermo informazioni calcolate
 
